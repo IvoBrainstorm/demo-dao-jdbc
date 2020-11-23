@@ -24,9 +24,15 @@ public class Program {
         list.forEach(System.out::println);
 
         System.out.println("\n=== TEST 3: seller insert  ===");
-        Seller seller1 = new Seller(null, "Greg", "gred@gmail.com", new Date(), 4000.00, dep);
-        sellerDao.insert(seller1);
-        System.out.println("Insert new id = " + seller1);
+//        Seller seller1 = new Seller(null, "Greg", "gred@gmail.com", new Date(), 4000.00, dep);
+//        sellerDao.insert(seller1);
+//        System.out.println("Insert new id = " + seller1);
+
+        System.out.println("\n=== TEST 4: seller findAll  ===");
+        Seller seller2 = new Seller();
+        List<Seller> list1 = sellerDao.findAll();
+        list1.forEach(System.out::println);
+
 
 
     }
